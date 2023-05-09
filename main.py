@@ -219,15 +219,11 @@ class Sodoku:
                 possibles = cell.possibles
 
         if c2 is not None and len(possibles) > 0:
-            print(f'one!!!! ({cell.x},{cell.y}) - {cell.possibles}')
-            print(f'two!!!! ({c2.x},{c2.y}) - {c2.possibles}')
             for cell2 in cells:
                 if cell2 != c2:
                     for pos in possibles:
                         if cell2.value == 'X' and pos in cell2.possibles:
                             ret = cell2.remove(pos)
-                            print(f'here!!!! {pos} - ({cell2.x},{cell2.y}) - {cell2.possibles}')
-                            input()
                             if ret is True:
                                 solve = True
         return solve
@@ -255,6 +251,30 @@ class Sodoku:
                     # print('After', cell.possibles)
                     # input()
         return False
+
+    def _naked_triples(self, cell, cells):
+        pass  # TODO
+
+    def naked_triples(self):
+        pass  # TODO
+
+    def _naked_quads(self, cell, cells):
+        pass  # TODO
+
+    def naked_quads(self):
+        pass  # TODO
+
+    def _hidden_pairs(self, cell, cells):
+        pass  # TODO
+
+    def hidden_pairs(self):
+        pass  # TODO
+
+    def _hidden_triples(self, cell, cells):
+        pass  # TODO
+
+    def hidden_triples(self):
+        pass  # TODO
 
 
 def main():
