@@ -1,0 +1,2 @@
+# sodokuSolver
+just time wasting
